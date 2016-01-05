@@ -17,8 +17,8 @@ class SyntaxErrorTest < Minitest::Test
 
   def test_message_for_missing_block_closer
     assert_error_map(
-      'syntax error, unexpected end-of-input, expecting keyword_end',
-      :syntax_error,
+      'syntax error, unexpected end-of-input, expecting keyword_end', 
+      :syntax_error, 
       :missing_block_closer)
   end
 end
